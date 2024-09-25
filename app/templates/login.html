@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<main>
+    <header>
+        <h1>Chaintech Assignment</h1>
+
+    
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('hello_world') }}">Home</a></li>
+                <li><a href="{{url_for('register_page')}}">Register</a></li>
+                <li><a href="{{url_for('login_page')}}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="weather-info" > 
+<form method="POST" action="{{url_for('login')}}">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <button type="submit" style="margin-left: 100px;">Login</button>
+</form>
+</div>
+
+
+
+
+
+</main>
+
+
+<footer >
+    <p>&copy; 2023 Chaintech. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
